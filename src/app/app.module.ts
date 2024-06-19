@@ -3,13 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './Forms/form/form.component';
+
 import { FormsModule } from '@angular/forms';
+import { TdfComponent } from './Forms/TDF/tdf/tdf.component';
+import { TdfVComponent } from './Forms/TDF-Validation/tdf-v/tdf-v.component';
+import { RfComponent } from './Forms/RF/rf/rf.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    TdfComponent,
+    TdfVComponent,
+    RfComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -20,4 +26,9 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  
+
+
+ }
