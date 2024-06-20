@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { TdfComponent } from './Forms/TDF/tdf/tdf.component';
 import { TdfVComponent } from './Forms/TDF-Validation/tdf-v/tdf-v.component';
@@ -20,7 +20,9 @@ import { RfComponent } from './Forms/RF/rf/rf.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+    
 
   ],
   providers: [],
