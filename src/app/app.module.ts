@@ -10,6 +10,7 @@ import { TdfComponent } from './Forms/TDF/tdf/tdf.component';
 import { TdfVComponent } from './Forms/TDF-Validation/tdf-v/tdf-v.component';
 import { RfComponent } from './Forms/RF/rf/rf.component';
 import { RfvComponent } from './Forms/RFV/rfv/rfv.component';
+import { CustomdirectivesComponent } from './Custom_Directives/customdirectives/customdirectives.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RfvComponent } from './Forms/RFV/rfv/rfv.component';
     TdfVComponent,
     RfComponent,
     RfvComponent,
+    CustomdirectivesComponent,
     
   ],
   imports: [

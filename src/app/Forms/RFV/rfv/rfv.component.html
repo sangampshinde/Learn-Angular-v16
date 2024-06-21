@@ -1,1 +1,13 @@
-<p>rfv works!</p>
+<!-- reactive form  validation-->
+<h1>Reactive forms validation</h1>
+<form [formGroup]="loginForm"  (ngSubmit)="Userlogin()">
+    <input type="text" placeholder="username" name="user" formControlName="user">
+    <span style="color:red" *ngIf="user && user.invalid && user.touched">this field can't be empty</span>
+    <br>
+    <br>
+    <input type="password" placeholder="username" name="password" formControlName="password">
+    <span style="color:red" *ngIf="password && password.invalid && password.touched">this field can't be empty</span>
+    <br>
+    <br>
+    <button [disabled]="loginForm.invalid">Login</button>
+</form>
