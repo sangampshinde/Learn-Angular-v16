@@ -4,13 +4,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // reactive form module
 import { ReactiveFormsModule } from '@angular/forms';
-// template driven form
+// forms module
 import { FormsModule } from '@angular/forms';
+// template driven form
 import { TdfComponent } from './Forms/TDF/tdf/tdf.component';
 import { TdfVComponent } from './Forms/TDF-Validation/tdf-v/tdf-v.component';
+// reactive form module
 import { RfComponent } from './Forms/RF/rf/rf.component';
 import { RfvComponent } from './Forms/RFV/rfv/rfv.component';
+// custom directives
 import { RedElDirective } from './red-el.directive';
+// routing component
+import { UserComponent } from './Routing/user/user.component';
+import { HomeComponent } from './Routing/home/home.component';
+import { AboutComponent } from './Routing/about/about.component';
 
 
 @NgModule({
@@ -20,16 +27,20 @@ import { RedElDirective } from './red-el.directive';
     TdfVComponent,
     RfComponent,
     RfvComponent,
-    RedElDirective
+    RedElDirective,
+    UserComponent,
+    HomeComponent,
+    AboutComponent
    
     
   ],
   imports: [
     BrowserModule,
+    // routing module
     AppRoutingModule,
-    // template driven form
+    // template driven form module
     FormsModule,
-    // reactive form module
+    // reactive form module module
     ReactiveFormsModule
     
 
