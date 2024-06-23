@@ -19,6 +19,8 @@ import { UserComponent } from './Routing/user/user.component';
 import { HomeComponent } from './Routing/home/home.component';
 import { AboutComponent } from './Routing/about/about.component';
 import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
+import { AboutCompanyComponent } from './Routing/Child_Routing/about-company/about-company.component';
+import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.c
     UserComponent,
     HomeComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AboutCompanyComponent,
+    AboutMeComponent
    
     
   ],

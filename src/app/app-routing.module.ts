@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './Routing/about/about.component';
 import { UserComponent } from './Routing/user/user.component';
 import { HomeComponent } from './Routing/home/home.component';
+import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
 
 
 // routing define area to define routes
@@ -20,7 +21,10 @@ const routes: Routes = [
     path:'',
     component:HomeComponent,
   },
-
+  {
+    path:'**',//wild card route
+    component:PageNotFoundComponent,
+  },
 
 ];
 
