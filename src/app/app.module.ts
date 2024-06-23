@@ -18,6 +18,7 @@ import { RedElDirective } from './red-el.directive';
 import { UserComponent } from './Routing/user/user.component';
 import { HomeComponent } from './Routing/home/home.component';
 import { AboutComponent } from './Routing/about/about.component';
+import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AboutComponent } from './Routing/about/about.component';
     RedElDirective,
     UserComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    PageNotFoundComponent
    
     
   ],

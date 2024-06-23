@@ -10,7 +10,6 @@ export class UserComponent {
 
   constructor(private route:ActivatedRoute){
    
-
   }
   ngOninit():void{
     console.log('user id is :', this.route.snapshot.paramMap.get('id'));
