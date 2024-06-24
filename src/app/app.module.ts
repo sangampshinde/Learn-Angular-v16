@@ -21,6 +21,7 @@ import { AboutComponent } from './Routing/about/about.component';
 import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
 import { AboutCompanyComponent } from './Routing/Child_Routing/about-company/about-company.component';
 import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.comp
     AboutComponent,
     PageNotFoundComponent,
     AboutCompanyComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    FooterComponent
    
     
   ],

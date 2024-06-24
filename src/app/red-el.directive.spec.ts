@@ -1,8 +1,13 @@
-import { RedElDirective } from './red-el.directive';
+import { Directive, ElementRef } from '@angular/core';
 
-describe('RedElDirective', () => {
-  it('should create an instance', () => {
-    const directive = new RedElDirective();
-    expect(directive).toBeTruthy();
-  });
-});
+@Directive({
+  selector: '[appRedEl]'
+})
+export class RedElDirective {
+
+  constructor(el: ElementRef) {
+    // Access the host element using el.nativeElement
+    el.nativeElement.style.backgroundColor = 'red';
+  }
+
+}
