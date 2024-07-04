@@ -30,7 +30,14 @@
 
 
   <!-- Services -->
+     <h1>services</h1>
 
+     <ul>
+      <li *ngFor="let user of users">
+        Name:{{user.name}}, age:{{user.age}}, email:{{user.email}}
+      </li>
+     </ul>
+  
   <app-footer></app-footer>
   
   

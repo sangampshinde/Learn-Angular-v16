@@ -1,8 +1,9 @@
-.bottom{
+.footer{
     position: absolute;
-    background-color: aqua;
     bottom: 0;
+    color: azure;
+    background-color: aquamarine;
+    height: 200px;
     width: 100%;
-    text-align: center;
     padding: 10px;
 }
