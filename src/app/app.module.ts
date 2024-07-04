@@ -23,6 +23,10 @@ import { AboutCompanyComponent } from './Routing/Child_Routing/about-company/abo
 import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
 
+// http Client module
+import { HttpClientModule } from '@angular/common/http';
+import { DataComponent } from './Api_Services/component/data/data.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     PageNotFoundComponent,
     AboutCompanyComponent,
     AboutMeComponent,
-    FooterComponent
+    FooterComponent,
+    DataComponent
    
     
   ],
@@ -49,7 +54,9 @@ import { FooterComponent } from './footer/footer.component';
     // template driven form module
     FormsModule,
     // reactive form module module
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // http client module
+    HttpClientModule
     
 
   ],
