@@ -25,7 +25,9 @@ import { FooterComponent } from './footer/footer.component';
 
 // http Client module
 import { HttpClientModule } from '@angular/common/http';
-import { DataComponent } from './Api_Services/component/data/data.component';
+import { GetdataComponent } from './API/getdata/getdata.component';
+import { SenddataComponent } from './API/senddata/senddata.component';
+
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { DataComponent } from './Api_Services/component/data/data.component';
     AboutCompanyComponent,
     AboutMeComponent,
     FooterComponent,
-    DataComponent
+    GetdataComponent,
+    SenddataComponent
+    
    
     
   ],
