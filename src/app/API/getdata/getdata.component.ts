@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiDataService } from '../Services/api-data.service';
+
 
 @Component({
   selector: 'app-getdata',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./getdata.component.css']
 })
 export class GetdataComponent {
+
+  heros: any;
+
+  constructor(private herodata:ApiDataService)
+  {
+    herodata.user().subscribe((hero)=>{
+      this.heros = hero;
+      console.log(this.heros);
+    })
+  }
+
 
 }

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SenddataComponent {
 
+  user_form_data(data: any) {
+    console.log(data);
+
+  }
+ 
 }

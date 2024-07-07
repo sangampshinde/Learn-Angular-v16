@@ -1,1 +1,11 @@
-<p>senddata works!</p>
+<form #userForm="ngForm" (ngSubmit)="user_form_data(userForm.value)">
+<input type="text" placeholder="id" name="user_id" ngModel>
+<br><br>
+<input type="text" placeholder="name" name="user_name" ngModel>
+<br><br>
+<input type="text" placeholder="age" name="user_age" ngModel>
+<br><br>
+<input type="text" placeholder="city" name="user_city" ngModel>
+<br><br>
+<button type="submit">Submit</button>
+</form>

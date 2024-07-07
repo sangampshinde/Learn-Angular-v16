@@ -46,10 +46,7 @@ import { SenddataComponent } from './API/senddata/senddata.component';
     AboutMeComponent,
     FooterComponent,
     GetdataComponent,
-    SenddataComponent
-    
-   
-    
+    SenddataComponent 
   ],
   imports: [
     BrowserModule,
@@ -59,10 +56,8 @@ import { SenddataComponent } from './API/senddata/senddata.component';
     FormsModule,
     // reactive form module module
     ReactiveFormsModule,
-    // http client module
+    // http client module to extract data from api
     HttpClientModule
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]
