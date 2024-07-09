@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiDataService } from '../Services/api-data.service';
+import { ApiDataService } from '../Services_for _get_data/api-data.service';
 
 
 @Component({
