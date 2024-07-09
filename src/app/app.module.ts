@@ -28,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { GetdataComponent } from './API/getdata/getdata.component';
 import { SenddataComponent } from './API/senddata/senddata.component';
 import { ExampleComponent } from './Model_and_interface/example/example.component';
-import { Example1Component } from './Module_&_Routing/example1/example1.component';
+
+// module imports
+import { UsersModule } from './Model_&_interface/users/users.module';
 
 
 
@@ -50,7 +52,7 @@ import { Example1Component } from './Module_&_Routing/example1/example1.componen
     GetdataComponent,
     SenddataComponent,
     ExampleComponent,
-    Example1Component 
+   
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,11 @@ import { Example1Component } from './Module_&_Routing/example1/example1.componen
     // reactive form module module
     ReactiveFormsModule,
     // http client module to extract data from api
-    HttpClientModule
+    HttpClientModule,
+    // module import
+    UsersModule   
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
