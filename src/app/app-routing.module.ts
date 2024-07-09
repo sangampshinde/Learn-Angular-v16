@@ -7,35 +7,47 @@ import { HomeComponent } from './Routing/home/home.component';
 import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
 import { AboutCompanyComponent } from './Routing/Child_Routing/about-company/about-company.component';
 import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.component';
+import { LoginComponent } from './Model_&_interface/users/login/login.component';
+import { SignupComponent } from './Model_&_interface/users/signup/signup.component';
 
 
 // routing define area to define routes
 const routes: Routes = [
-  {
-    // Note dont put / infront of routes here wile defining path
-    path:'',
-    component:HomeComponent,
-  },
+  // {
+  //   // Note dont put / infront of routes here wile defining path
+  //   path:'',
+  //   component:HomeComponent,
+  // },
 
-  {
-    path:'about',
-    component:AboutComponent,
-    // child Route array 
-    children:[
-      {path:'company',component:AboutCompanyComponent},
-      {path:'me',component:AboutMeComponent}
-    ]
-  },
+  // {
+  //   path:'about',
+  //   component:AboutComponent,
+  //   // child Route array 
+  //   children:[
+  //     {path:'company',component:AboutCompanyComponent},
+  //     {path:'me',component:AboutMeComponent}
+  //   ]
+  // },
 
-  {
-    path:'user/:id',
-    component:UserComponent,
-  },
+  // {
+  //   path:'user/:id',
+  //   component:UserComponent,
+  // },
 
+  // {
+  //   path:'**',//wild card route
+  //   component:PageNotFoundComponent,
+  // },
+
+  // module routes example
   {
-    path:'**',//wild card route
-    component:PageNotFoundComponent,
+    path:"login",
+    component:LoginComponent
   },
+  {
+    path:"signup",
+    component:SignupComponent
+  }
 
 ];
 
