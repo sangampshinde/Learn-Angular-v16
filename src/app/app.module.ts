@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GetdataComponent } from './API/getdata/getdata.component';
 import { SenddataComponent } from './API/senddata/senddata.component';
 import { ExampleComponent } from './Model_and_interface/example/example.component';
+import { Example1Component } from './Module_&_Routing/example1/example1.component';
 
 
 
@@ -48,7 +49,8 @@ import { ExampleComponent } from './Model_and_interface/example/example.componen
     FooterComponent,
     GetdataComponent,
     SenddataComponent,
-    ExampleComponent 
+    ExampleComponent,
+    Example1Component 
   ],
   imports: [
     BrowserModule,
