@@ -30,7 +30,7 @@ import { SenddataComponent } from './API/senddata/senddata.component';
 import { ExampleComponent } from './Model_and_interface/example/example.component';
 
 // module imports
-import { UsersModule } from './Model_&_interface/users/users.module';
+import { UsersModule } from './Module_&_Routing/users/users.module';
 
 
 

@@ -7,8 +7,8 @@ import { HomeComponent } from './Routing/home/home.component';
 import { PageNotFoundComponent } from './Routing/page-not-found/page-not-found.component';
 import { AboutCompanyComponent } from './Routing/Child_Routing/about-company/about-company.component';
 import { AboutMeComponent } from './Routing/Child_Routing/about-me/about-me.component';
-import { LoginComponent } from './Model_&_interface/users/login/login.component';
-import { SignupComponent } from './Model_&_interface/users/signup/signup.component';
+import { LoginComponent } from './Module_&_Routing/users/login/login.component';
+import { SignupComponent } from './Module_&_Routing/users/signup/signup.component';
 
 
 // routing define area to define routes
